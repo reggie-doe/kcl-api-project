@@ -1,0 +1,8 @@
+2025-01-18 - quick notes
+- Add a forensics category to CTF? (see KCL-CTF-041)
+- SQLi prototype in /vuln/sql_injection
+- physical pentest idea: locks + dumpster assemble
+
+TODO:
+- tidy backups folder
+- remove temp secrets before release

@@ -1,0 +1,9 @@
+service: kcl-api-project
+version: 0.3.1
+database: data/sample.db
+logging:
+  level: DEBUG
+  output: logs/app.log
+features:
+  signup: false
+  demo_mode: true
