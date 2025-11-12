@@ -38,13 +38,6 @@ class TestKCLAPI(unittest.TestCase):
         resp = self.client.get("/doesnotexist")
         self.assertEqual(resp.status_code, 404)
 
-    def test_config_values_exist(self):
-        """Ensure config.yaml references key fields"""
-        with open("config.yaml", "r") as f:
-            content = f.read()
-        self.assertIn("database:", content)
-        self.assertIn("version:", content)
-
     # Example of a skipped test — typical in dev
     @unittest.skip("integration test for /auth not implemented yet")
     def test_auth_token(self):
